@@ -6,9 +6,38 @@
     <segment>
       <node>
         <text-node>
-          <description>Renders the Another Profile Form.</description>
+          <description>Renders the Another Profile Landing Page.</description>
         </text-node>
         <node-display x="1" y="1"/>
+      </node>
+    </segment>
+  </branch>
+  <branch basename="LandingPage">
+    <segment>
+      <node>
+        <start-node name="LandingPage" secure="false"/>
+        <node-display x="1" y="2"/>
+      </node>
+      <simple-transition>
+        <transition-display>
+          <bend-point relative-to="target" x="0" y="-1"/>
+        </transition-display>
+      </simple-transition>
+      <node>
+        <interaction-node transaction-required="false">
+          <template buffered="true" dynamic="false" name="account/another/lps_landing_form"/>
+        </interaction-node>
+        <node-display x="0" y="2"/>
+      </node>
+    </segment>
+  </branch>
+  <branch basename="_ANONYMOUS_BRANCH_3">
+    <segment>
+      <node>
+        <text-node>
+          <description>Renders the Another Profile Form.</description>
+        </text-node>
+        <node-display x="5" y="1"/>
       </node>
     </segment>
   </branch>
@@ -16,7 +45,7 @@
     <segment>
       <node>
         <start-node name="FormSection" secure="false"/>
-        <node-display x="1" y="2"/>
+        <node-display x="5" y="2"/>
       </node>
       <simple-transition/>
       <node>
