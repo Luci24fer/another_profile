@@ -1,1 +1,42 @@
-	<isslot id="another-profile-landing-page" description="Landing Page for Another Profile" context="global" />
+<iscontent type="text/html" charset="UTF-8" compact="true"/>
+<isdecorate template="account/pt_account">
+	<isinclude template="util/modules"/>
+<!-- <isslot id="another-profile-landing-page" description="Landing Page for Another Profile" context="global" />
+
+<!--  Styling --> 
+<style type="text/css">
+.apply-now{
+    margin-left: 70px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+</style>
+
+<!--  HTML --> 	
+<div class="contents">
+	<img alt="" src="${URLUtils.staticURL('/images/landing_page.png')}" title="" /><br>
+	<a class="btn btn-primary apply-now" href="${URLUtils.url('AnotherProfile-FormSection')}">Apply Now</a>
+</div>
+
+</isdecorate>
